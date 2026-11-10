@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фреймы</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Иконка сайта во вкладке браузера -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <!-- Ссылка -->
+        <a href="index.html">
+            <!-- Изображение -->
+            <img src="img/1.png" alt="Логотип компании" width="150">
+        </a>
+        <h1>Варианты использования фреймов</h1>
+
+        <!-- Навигационное меню -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент страницы (один на странице) -->
+    <main>
+        <section>
+            <h2>Добро пожаловать!</h2>
+            <iframe src="https://vk.ru/video_ext.php?oid=-211232966&id=456241512&hash=7db8126ff953bf7b" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+        </section>
+
+        <!-- Раздел с несколькими карточками/новостями -->
+        <section class="test">
+            <h2>Как до нас добраться!</h2>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae30b36d0579996d45e87e972e114ff38a07a474333e23454d819d6ee4b7b88e0&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        </section>
+
+
+        <section>
+            <h2>Наши соцсети</h2>
+                    <!-- Put this script tag to the <head> of your page -->
+        <script type="text/javascript" src="https://vk.ru/js/api/openapi.js?168"></script>
+
+        <!-- Put this div tag to the place, where the Group block will be -->
+        <div id="vk_groups"></div>
+        <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 4, no_cover: 1, wide: 1, height: 600, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 206603586);
+        </script>
+        </section>
+    </main>
+
+    <!-- Подвал сайта с якорем #contacts -->
+    <footer>
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>&copy; 2026 Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
